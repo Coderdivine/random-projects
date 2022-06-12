@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Send Mail</title>
+<link rel="stylesheet" href="sendmail.css">
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+</head>
+<body>
+<div class="txt">
+<h1>Try to send a mail.</h1>
+</div>
+<div class="container">
+<div class="search">
+<form action="mailto:chimdi4332@gmail.com" method="post" enctype="text/plain">
+<input type="email" placeholder="Enter Your Email" name="email" >
+<button type="submit" class="btn">SEND</button>
+<textarea type="text" row="8" placeholder="Enter text here ..."></textarea>
+</form>
+</div>
+<div class="price">
+<h1>SEND TO 1000 EMAILS</h1>
+<p>Buy Now</p>
+<span>NGN 12000</span>
+<button class="btn" onclick="payWithPaystack()">BUY NOW</button>
+</div>
+</div>
+<footer>
+<div class="footer">
+<ul>
+<li>Contact:chimdi@gmail.com</li>
+<li>Support:<a href="" >Paypal</a></li>
+<span>&copy; copyright 2022 | Alpha02.community</span>
+</ul>
+</div>
+</footer>
+</body>
+</html>
+<script>
+function payWithPaystack(){
+var handler = PaystackPop.setup({
+key:"pk_test_610959a040dfbf220ad9efc0446746d88f745e0f",
+email:"chimdi4332@gmail.com",
+amount:2000 * 100,
+callback:function(response){
+alert("Well done")
+},
+onClose:function(response){
+alert("More for you")
+}
+
+
+})
+handler.openIframe();
+
+}
+</script>

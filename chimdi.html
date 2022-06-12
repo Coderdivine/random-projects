@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CHIMDI'S TOOLS</title>
+<link href="chimdi.css" rel="stylesheet">
+</head>
+<body>
+<div class="nav-container">
+<div class="navbar">
+<h1 id="navbar-logo">CHIMDI<small>/tools</small></h1>
+<div class="menu-toggle" id="mobile-menu">
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+</div>
+<ul class="nav-menu">
+<li href="#" class="nav-links">HOME</li>
+<li href="#" class="nav-links">ABOUT</li>
+<li href="#" class="nav-links">CONTACT US</li>
+<li href="#" class="nav-links">SUPPORT</li>
+</ul>
+</div>
+</div>
+<div class="search">
+<input type="search" id="search" placeholder="search for tools">
+</div>
+<div class="bug">
+<header>SEO analyizer</header>
+<div class="bug-flex">
+<img src="chimdi logo.png" alt="erlreate"/>
+<h2>Keyword Research tools</h2>
+</div>
+</div>
+<div class="container-l">
+<div class="box-l">
+<img src="./1839.png" alt="an image here"/>
+<h1>Face edit</h1>
+<a href="/faceedit" onclick="route(event)" class="ctn">Use tool</a>
+</div>
+<div class="box-l">
+<img src="storage/emulated/0/Download/1839.png" alt="an image here"/>
+<h1>Use Cal.</h1>
+<a href="/faceedit" onclick="route(event)" class="ctn">Use tool</a>
+</div>
+</div>
+<div class="bug">
+<header>YouTube analyizer</header>
+<div class="bug-flex">
+<img src="chimdi logo.png" alt="erlreate"/>
+<h2>100 YouTube Keyword Research tools</h2>
+</div>
+</div>
+<div class="container-l">
+<div class="box-l">
+<img src="/storage/emulated/0/Download/1839.png" alt="an image here"/>
+<h1>Face edit</h1>
+<a href="/faceedit" onclick="route(event)" class="ctn">Use tool</a>
+</div>
+<div class="box-l">
+<img src="/storage/emulated/0/Download/1839.png" alt="an image here"/>
+<h1>Use Cal.</h1>
+<a href="/faceedit" onclick="route(event)" class="ctn">Use tool</a>
+</div>
+</div>
+</body>
+</html>
+<script src="route.js"></script>
+<script>
+const m = document.querySelector("#mobile-menu");
+const ml = document.querySelector(".nav-menu");
+m.addEventListener("click",function(){
+m.classList.toggle("is-active");
+ml.classList.toggle("active");
+})
+</script>
